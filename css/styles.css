@@ -151,10 +151,13 @@ section {
 .main-section {
     background-color: var(--background-footer-color);
     text-align: center;
-    /* height: 600px; */
+     height: 600px; 
+     max-width: 1600px;
+     margin: auto;
     padding:200px 0;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
  
 .main-tittle {
@@ -294,6 +297,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 10px;
+    margin-top: 16px;
 }
 .social-list-item {
     width: 44px;
@@ -306,10 +310,10 @@ section {
    height: inherit;
     border-radius: 50%;
     background-color: var(--main-letter-color);
-    fill: var(--icon-color);
+    color: var(--icon-color);
 }
-.social-list {
-    margin-top: 16px;
+.social-list-icon {
+    fill: currentColor;
 }
 .social-list-link:hover,
 .social-list-link:focus {
@@ -317,7 +321,7 @@ section {
 }
 .social-list-link:hover .social-list-icon,
 .social-list-link:hover .social-list-icon {
-    fill: var(--main-letter-color);
+    color: var(--main-letter-color);
 }
 .clients-list {
     display: flex;
@@ -326,25 +330,29 @@ section {
     gap: 30px;
 }
 .clients-list-items {
+    
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    fill: var(--icon-color);
+}
+.clients-icon {
+    fill: currentColor;
+}
+.clients-link {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 170px;
-    height: 92px;
-    border: 1px solid var(--icon-color);
-
-}
-.clients-link {
-    display: block;
-    fill: var(--icon-color);
+    height: 92px;;
+    color: var(--icon-color);
    
 }
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon {
     fill: var(--accent-color);
 }
-.clients-list-items:hover ,
-.clients-list-items:focus {
+.clients-link:hover ,
+.clients-link:focus {
     border:1px solid var(--accent-color);
 }
 
@@ -404,10 +412,13 @@ section {
    height: inherit;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-    fill: var(--main-letter-color);
+    color: var(--main-letter-color);
+}
+.social-list-icon-footer {
+    fill: currentColor;
 }
 .social-list-footer {
-    margin-top: 16px;
+    margin-top: 20px;
 }
 .social-list-link-footer:hover,
 .social-list-link-footer:focus {
