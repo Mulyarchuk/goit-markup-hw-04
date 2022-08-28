@@ -80,6 +80,9 @@ section {
     display: flex;
     align-items: center;
     height: 80px;
+   
+}
+.page-header {
     border-bottom: 1px solid #ECECEC;
 }
 .menu-container {
@@ -318,11 +321,9 @@ section {
 .social-list-link:hover,
 .social-list-link:focus {
     background-color: var(--accent-color);
-}
-.social-list-link:hover .social-list-icon,
-.social-list-link:hover .social-list-icon {
     color: var(--main-letter-color);
 }
+
 .clients-list {
     display: flex;
     justify-content: center;
@@ -344,13 +345,11 @@ section {
     border-radius: 4px;
    ;
 }
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
-    fill: var(--accent-color);
-}
+
 .clients-link:hover ,
 .clients-link:focus {
     border:1px solid var(--accent-color);
+    color: var(--accent-color);
 }
 
 /* footer */
